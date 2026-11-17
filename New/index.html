@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Fancy Text Generator (𝓬𝓸𝓹𝔂 𝒶𝓃𝒹 𝓅𝒶𝓈𝓉𝓮) ― FancyTexto</title>
+  <meta name="title" content="Fancy Text Generator (𝓬𝓸𝓹𝔂 𝒶𝓃𝒹 𝓅𝒶𝓈𝓉𝓮) ― FancyTexto">
+  <meta name="description" content="Free online Fancy Text Generator. Convert normal text into stylish fancy fonts, cursive, gothic, bold, aesthetic, and cool Unicode symbols instantly. Copy and paste anywhere!">
+  <meta name="keywords" content="Fancy Text Generator, Fancy Text, Fancy Fonts, Fancy Font Generator, Stylish Text Generator, Cool Fonts, Copy and Paste Fonts, Unicode Text Generator">
+  <meta name="author" content="FancyTexto">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical URL Placeholder -->
+  <link rel="canonical" href="https://fancytexto.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fancytexto.com/">
+  <meta property="og:title" content="Fancy Text Generator ― Copy &amp; Paste Stylish Fonts">
+  <meta property="og:description" content="Convert your normal text into stylish fancy fonts instantly. Just type your text and copy your favorite style!">
+  <meta property="og:site_name" content="FancyTexto">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://fancytexto.com/">
+  <meta name="twitter:title" content="Fancy Text Generator ― FancyTexto">
+  <meta name="twitter:description" content="Convert your normal text into stylish fancy fonts instantly. Just type your text and copy your favorite style!">
+
+  <!-- Favicon SVG (Data URI - lightweight, zero external requests) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23111827'/><text x='50' y='68' font-size='56' font-family='serif' font-weight='bold' fill='%23ffffff' text-anchor='middle'>𝓕</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org JSON-LD for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://fancytexto.com/#app",
+        "name": "FancyTexto",
+        "url": "https://fancytexto.com/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "description": "Convert normal text into stylish fancy fonts instantly with real-time Unicode conversion.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://fancytexto.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I use the Fancy Text Generator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Simply type or paste your normal text into the left text box. All fancy font variations will appear instantly in the right box. Highlight and copy whichever style you like."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are these real fonts or Unicode characters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They are Unicode symbols and mathematical alphanumeric characters, not font files. This means you can copy and paste them onto any website or app that supports standard Unicode text."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use these fancy fonts on Instagram, TikTok, and Discord?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Fancy text works seamlessly in Instagram bios, TikTok captions, Discord nicknames, Twitter/X tweets, Facebook posts, WhatsApp chats, and gaming handles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is FancyTexto completely free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, FancyTexto is 100% free with no registration, no limits, no ads, and no external dependencies."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Minimal Brand Header -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-badge">𝓕</span>
+      <span class="brand-name">FancyTexto</span>
+    </div>
+  </header>
+
+  <!-- Main Application Wrapper -->
+  <main class="main-wrapper">
+    
+    <!-- Intro / Title Section -->
+    <section class="hero-section">
+      <h1 class="page-title">Fancy Text Generator</h1>
+      <p class="page-desc">Convert your normal text into stylish fancy fonts instantly. Just type your text and copy your favorite style!</p>
+    </section>
+
+    <!-- Side-by-Side Dual Textareas (Desktop) / Stacked (Mobile) -->
+    <section class="generator-container" aria-label="Text Generator Interface">
+      
+      <!-- Left: Normal Input Area -->
+      <div class="generator-panel">
+        <label for="input-text" class="panel-label">
+          <span class="label-title">Normal Text</span>
+          <span class="label-hint">Type or paste here</span>
+        </label>
+        <textarea
+          id="input-text"
+          class="text-box input-box"
+          placeholder="Type or paste your text here..."
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          aria-label="Normal Text Input"
+        ></textarea>
+      </div>
+
+      <!-- Right: Fancy Output Area -->
+      <div class="generator-panel">
+        <label for="output-text" class="panel-label">
+          <span class="label-title">Fancy Text</span>
+          <span class="label-hint">Click &amp; copy your favorite</span>
+        </label>
+        <textarea
+          id="output-text"
+          class="text-box output-box"
+          placeholder="Fancy text will appear here..."
+          readonly
+          spellcheck="false"
+          aria-label="Fancy Text Output"
+        ></textarea>
+      </div>
+
+    </section>
+
+    <!-- Informational & SEO Content Section -->
+    <article class="content-section">
+      
+      <!-- Section 1: How to use -->
+      <section class="info-block">
+        <h2>How to Use FancyTexto</h2>
+        <p>Using FancyTexto is effortless and requires no buttons or complicated settings:</p>
+        <ol class="steps-list">
+          <li><strong>Type or Paste:</strong> Enter your message or username into the <em>Normal Text</em> box on the left.</li>
+          <li><strong>Real-Time Conversion:</strong> Watch the <em>Fancy Text</em> area on the right immediately generate dozens of unique font styles.</li>
+          <li><strong>Copy &amp; Paste:</strong> Highlight any style you like, copy it (<kbd>Ctrl+C</kbd> or <kbd>Cmd+C</kbd>), and paste it anywhere on the web.</li>
+        </ol>
+      </section>
+
+      <!-- Section 2: How it works (Unicode explanation) -->
+      <section class="info-block">
+        <h2>How Does the Fancy Text Generator Work?</h2>
+        <p>
+          Unlike traditional word processors that require custom font files (such as <code>.ttf</code> or <code>.woff</code>), 
+          <strong>FancyTexto</strong> relies on the universal <strong>Unicode Standard</strong>. The Unicode specification includes over 140,000 characters 
+          comprising ancient alphabets, mathematical notation, enclosed alphanumerics, and decorative diacritics.
+        </p>
+        <p>
+          When you type a regular Latin character like <code>A</code>, our script maps it to visually corresponding symbols 
+          from various Unicode blocks—such as Mathematical Bold (<code>𝐀</code>), Script (<code>𝒜</code>), Fraktur (<code>𝔄</code>), 
+          or Double-Struck (<code>𝔸</code>). Because these are actual text characters rather than proprietary font files, they can be 
+          freely copied and pasted into social media bios, comments, and chat messages without losing their styling.
+        </p>
+      </section>
+
+      <!-- Section 3: Popular styles -->
+      <section class="info-block">
+        <h2>Popular Fancy Text Styles</h2>
+        <div class="styles-grid">
+          <div class="style-card">
+            <h3>Cursive &amp; Script</h3>
+            <p class="preview-text">𝒞𝓊𝓇𝓈𝒾𝓋ℯ &amp; 𝓒𝓾𝓻𝓼𝓲𝓿𝓮 𝓑𝓸𝓵𝓭</p>
+            <p>Elegant, handwritten script characters ideal for graceful Instagram bios, quotes, and wedding announcements.</p>
+          </div>
+          <div class="style-card">
+            <h3>Gothic &amp; Fraktur</h3>
+            <p class="preview-text">𝔊𝔬𝔱𝔥𝔦𝔠 &amp; 𝕲𝖔𝖙𝖍𝖎𝖈 𝕭𝖔𝖑𝖉</p>
+            <p>Medieval German Fraktur lettering delivering a dramatic, vintage, or edgy aesthetic for usernames.</p>
+          </div>
+          <div class="style-card">
+            <h3>Blackboard Bold (Double-Struck)</h3>
+            <p class="preview-text">𝔻𝕠𝕦𝕓𝕝𝕖-𝕊𝕥𝕣𝕦𝕔𝕜</p>
+            <p>Hollowed-out geometric letterforms originally created for mathematical theorems and physics notations.</p>
+          </div>
+          <div class="style-card">
+            <h3>Bubble &amp; Circled</h3>
+            <p class="preview-text">Ⓑⓤⓑⓑⓛⓔ &amp; 🅑🅤🅑🅑🅛🅔</p>
+            <p>Playful outlined and filled circular glyphs that instantly stand out in forum signatures and chat messages.</p>
+          </div>
+          <div class="style-card">
+            <h3>Vaporwave / Fullwidth</h3>
+            <p class="preview-text">Ａ ｅ ｓ ｔ ｈ ｅ ｔ ｉ ｃ</p>
+            <p>Wide East Asian fullwidth characters capturing the retro synthwave and chill aesthetic culture.</p>
+          </div>
+          <div class="style-card">
+            <h3>Upside Down &amp; Reverse</h3>
+            <p class="preview-text">uʍop ǝpısdn &amp; ɘƨɿɘvɘЯ</p>
+            <p>Inverted and flipped characters that playfully twist your words upside-down or backwards.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Where can you use it -->
+      <section class="info-block">
+        <h2>Where Can You Use Fancy Text?</h2>
+        <p>Because generated fancy text is standard Unicode, you can copy and paste it across virtually all modern websites, mobile apps, and games:</p>
+        <ul class="platforms-list">
+          <li><strong>Social Media:</strong> Instagram bios, TikTok profile captions, Twitter/X posts, Facebook updates, Threads, and YouTube comments.</li>
+          <li><strong>Messaging Platforms:</strong> WhatsApp, Telegram, Discord, Messenger, Skype, and Slack.</li>
+          <li><strong>Gaming Usernames:</strong> Discord tags, Steam display names, Minecraft nicknames, Roblox profiles, and battle royale handles.</li>
+          <li><strong>Personal Documents:</strong> Aesthetic notes, digital journaling, emails, and online portfolio highlights.</li>
+        </ul>
+      </section>
+
+      <!-- Section 5: FAQ -->
+      <section class="info-block faq-section">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        
+        <details class="faq-item" open>
+          <summary class="faq-question">Is FancyTexto completely free to use?</summary>
+          <div class="faq-answer">
+            <p>Yes, FancyTexto is 100% free with no hidden subscriptions, no required sign-ups, and no usage limitations.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Will everyone be able to see my fancy text?</summary>
+          <div class="faq-answer">
+            <p>Yes. Almost all modern smartphones (iOS and Android), computers (Windows, macOS, Linux), and web browsers support the Unicode standard and render these fancy characters seamlessly.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Why do some characters show up as blank rectangles or question marks?</summary>
+          <div class="faq-answer">
+            <p>If an older device or outdated browser lacks glyph support for a specific mathematical Unicode block, it may show a fallback box (often called "tofu"). Modern devices and popular social media apps fully render these styles.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Are these real font files?</summary>
+          <div class="faq-answer">
+            <p>No. Standard font files (like TrueType or OpenType) cannot be copied and pasted across websites without embedding CSS. FancyTexto uses distinct Unicode character symbols that mimic font styles, allowing them to travel anywhere as plain text.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Can I use numbers and punctuation in the generator?</summary>
+          <div class="faq-answer">
+            <p>Yes! Numbers, punctuation, and spacing are preserved across all styles, and many styles (like Bold, Monospace, Double-Struck, and Circled) feature custom styled numerical glyphs.</p>
+          </div>
+        </details>
+
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Minimal Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2026 FancyTexto &bull; Fast, lightweight, and modern fancy text generator inspired by LingoJam.</p>
+      <p class="footer-tagline">Crafted with pure HTML, CSS, and Vanilla JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
